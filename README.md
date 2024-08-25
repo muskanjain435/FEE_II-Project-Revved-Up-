@@ -4,4 +4,5 @@ It will have information about a lot of cars from sports to commercial and will 
 Users can login with their email and phone number for more personalised experience .
 Users can book test drives near their location as they want .
 Users can ask questions and response will be provided from our website .
+This website can also be used to see showrooms near you.
 More features will be added to this project in the future .
