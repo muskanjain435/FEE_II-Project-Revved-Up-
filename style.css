@@ -6,7 +6,7 @@
 }
 
 .map {
-    width: 100%;
+    width: 600px;
     max-width: 100%;
 }
 
@@ -74,6 +74,9 @@ body {
 .info1 h2 {
     margin-top: 0;
     font-size: 1.8em;
+    background: linear-gradient(to right, #295F98 35%, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .info1 p {
@@ -90,6 +93,7 @@ body {
     font-weight: bold;
     transition: background-color 0.5s;
     text-decoration: none;
+    margin-left: 180px;
 }
 
 .button:hover {
@@ -170,6 +174,7 @@ main h1 {
     display: inline-block;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 220px;
 }
 
 .button-main:hover {
