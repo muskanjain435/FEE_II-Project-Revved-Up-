@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RevvedUp</title>
+    <title>Login - RevvedUp</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
     <div class="login-wrapper">
         <div class="login-container">
@@ -19,17 +21,26 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
-                <button type="submit">Login</button>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Dont have an account? <a href="#">Register</a></p>
+                </div>
+
+
             </form>
         </div>
     </div>
     <div class="video-background">
         <video autoplay muted loop>
-            <source src="Login Page Video.mp4" type="video/mp4">
+            <source src="login video1.mp4" type="video/mp4">
             
         </video>
     </div>
-    <div class="content">
-    </div>
+
 </body>
+
 </html>
