@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1c557b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+.card-header button {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.card-header button.collapsed {
+    color: #0056b3;
+}
