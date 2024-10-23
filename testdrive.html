@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testdrive</title>
+    <link rel="stylesheet" href="testdrive.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-wrapper">
+            <form>
+                <h2>Request a Test Drive</h2>
+
+                <div class="input-group">
+                    <label for="name" class="input-label">Full Name</label>
+                    <input type="text" class="input-field" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email" class="input-label">Email Address</label>
+                    <input type="email" class="input-field" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone" class="input-label">Phone Number</label>
+                    <input type="tel" class="input-field" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="car-model" class="input-label">Car Model</label>
+                    <select class="input-select" id="car-model" required>
+                            <option value="" disabled selected>Select a car model</option>
+                            <option value="model1">Model 1</option>
+                            <option value="model2">Model 2</option>
+                            <option value="model3">Model 3</option>
+                        </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="test-drive-date" class="input-label">Preferred Date for Test Drive</label>
+                    <input type="date" class="input-field" id="test-drive-date" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="comments" class="input-label">Additional Comments</label>
+                    <textarea class="input-textarea" id="comments" rows="3" placeholder="Enter any additional comments"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Test Drive</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
