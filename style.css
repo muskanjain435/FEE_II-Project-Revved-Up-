@@ -2,7 +2,7 @@ body {
     font-family: "roboto", sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background-2.webp');
+    background-image: url('Images/background-2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ main h1 {
     margin: 0 auto;
     position: relative;
     border: 0.125px solid rgb(21, 24, 17);
-    background-image: url('car-2.jpg');
+    background-image: url('Images/car-2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
