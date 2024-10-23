@@ -10,7 +10,7 @@
 
 <body>
     <div class="login-wrapper">
-        <div class="login-container">
+        <div class="login-container" id="loginForm">
             <h2>Welcome to RevvedUp</h2>
             <form>
                 <div class="form-group">
@@ -27,19 +27,53 @@
                 </div>
                 <button type="submit" class="btn">Login</button>
                 <div class="register-link">
-                    <p>Dont have an account? <a href="#">Register</a></p>
+                    <p>Don't have an account? <a href="#">Register</a></p>
                 </div>
-
-
             </form>
         </div>
     </div>
     <div class="video-background">
         <video autoplay muted loop>
             <source src="login video1.mp4" type="video/mp4">
-            
         </video>
     </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popup-message"></span>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const popup = document.getElementById('popup');
+        const popupMessage = document.getElementById('popup-message');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (password.length < 8) {
+                popupMessage.style.color = 'red';
+                popupMessage.textContent = 'Error: Password must be at least 8 characters long.';
+                popup.style.display = 'block';
+                return;
+            }
+
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password);
+
+            popupMessage.style.color = 'green';
+            popupMessage.textContent = 'Login successful! Redirecting...';
+            popup.style.display = 'block';
+
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>
+
 
 </body>
 
